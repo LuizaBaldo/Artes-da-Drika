@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url(https://i.pinimg.com/originals/16/cf/5e/16cf5e3668a3732c548fecbe37c3c470.jpg); 
+  font-family: 'Great Vibes', cursive; 
+  background-size: auto 100vh;
+  height: 100vh;
+  font-size: 12px;
+}
+
+a{
+    color: purple;
+    text-decoration: none;
+}
+  
+a:hover{
+    text-decoration: underline;
+    color: #FF69B4;
+}
+
+.contato,
+.toucas,
+.toucastoalhas,
+.mascaras,
+.tecidos {
+    padding: 3em;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contato h2,
+.toucas h2,
+.toucastoalhas h2,
+.mascaras h2,
+.tecidos h2{
+    font-family: 'Lora', serif;
+    font-size: 4em;
+    color: purple;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+.contato a{
+    color: purple;
+    font-size: 3em;
+    font-family: 'Lora', serif;
+    justify-content: center;
+    margin-left: 1em;
+    transition: text-shadow 0.5s;
+}
+
+.contato .icons{
+    text-align: center;
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 5px 15px whitesmoke;
+}
+
+.contato .grid{
+    display: grid;
+    gap: 2em;
+}
+
+div{
+    display: block;
+}
+
+.div .grid{
+    margin-left: 15px;
+}
+
+figure{
+    text-align: center;
+}
+
+h3{
+    font-size: 4em;
+    color: purple;
+    margin-bottom: 1.5em;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.img-toucas{
+    height: 180px;
+    width: 180px;
+    border-color: purple;
+    border-width: 10px;
+    border-style: solid;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+.img-toucastoalhas{
+    height: 180px;
+    width: 180px;
+    border-color: purple;
+    border-width: 10px;
+    border-style: solid;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+.img-mascaras{
+    height: 180px;
+    width: 180px;
+    border-color: purple;
+    border-width: 10px;
+    border-style: solid;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+.img-tecidos{
+    height: 180px;
+    width: 180px;
+    border-color: purple;
+    border-width: 10px;
+    border-style: solid;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
+@media(min-width: 320px){
+    .contato .grid{
+    grid-template-columns: repeat(1, 240px);
+    justify-content: center;
+    }
+}
+
+@media(min-width: 550px){
+    .grid{
+        grid-template-columns: repeat(2, 260px);
+        justify-content: center;
+    }
+    .contato .grid{
+        grid-template-columns: repeat(2, 260px);
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1000px){
+    .grid{
+        grid-template-columns: repeat(3, 260px);
+        justify-content: center;
+    }
+    .img-toucas,
+    .img-toucastoalhas,
+    .img-mascaras,
+    .img-tecidos{
+        height: 240px;
+        width: 240px;
+    }
+    .contato .grid{
+        grid-template-columns: repeat(4, 260px);
+        justify-content: center;
+    }
+    
+}
+
+.menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu a{
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.9s, color 0.9s;
+}
+
+.menu a:hover{
+    background-color: purple;
+    color: greenyellow;
+}
+
+.menu li{
+    list-style: none;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+  
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-title{
+    text-align: center;
+    color: purple;
+    font-size: 8em;
+    font-family: 'Great Vibes', cursive;
+}
+
+.site-subtitle{
+    text-align: center;
+    color: purple;
+    font-size: 4em;
+}
+
+.grid{
+    display: grid;
+    gap: 2em;
+    
+}
