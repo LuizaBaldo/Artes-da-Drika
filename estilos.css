@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
+* html ul li { float: left; }
+* html ul li a { height: 1%; }
+*/
 body{
   background-image: url(https://i.pinimg.com/originals/16/cf/5e/16cf5e3668a3732c548fecbe37c3c470.jpg); 
   font-family: 'Great Vibes', cursive; 
@@ -26,6 +29,7 @@ a:hover{
 .toucas,
 .toucastoalhas,
 .mascaras,
+.lencois,
 .tecidos {
     padding: 3em;
     min-height: 100vh;
@@ -37,6 +41,7 @@ a:hover{
 .toucas h2,
 .toucastoalhas h2,
 .mascaras h2,
+.lencois h2,
 .tecidos h2{
     font-family: 'Lora', serif;
     font-size: 4em;
@@ -134,6 +139,16 @@ header{
     object-position: left bottom;
 }
 
+.img-lencois{
+    height: 180px;
+    width: 180px;
+    border-color: purple;
+    border-width: 10px;
+    border-style: solid;
+    object-fit: cover;
+    object-position: left bottom;
+}
+
 @media(min-width: 320px){
     .contato .grid{
     grid-template-columns: repeat(1, 240px);
@@ -160,6 +175,7 @@ header{
     .img-toucas,
     .img-toucastoalhas,
     .img-mascaras,
+    .img-lencois,
     .img-tecidos{
         height: 240px;
         width: 240px;
@@ -201,6 +217,23 @@ header{
     justify-content: space-around;
 }
 
+/*
+li ul{
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+
+ul li a {
+    display: block;
+     
+}
+
+li:hover ul { display: block; }
+
+ 
+*/
 .site-title{
     text-align: center;
     color: purple;
