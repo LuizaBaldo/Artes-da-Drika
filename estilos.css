@@ -74,6 +74,18 @@ a:hover{
     gap: 2em;
 }
 
+.contato h3{
+    margin-top: 220px;
+    margin-bottom: 30px;
+    font-family: 'Lora', serif;
+    justify-content: left;
+    font-size: 3em;
+}
+
+.dev a{
+    font-size: 2.5em;
+}
+
 div{
     display: block;
 }
